@@ -26,7 +26,7 @@ $(document).ready(function() {
         gradeTotal += parseFloat($this.val() || 0);
       }
     });
-    return  (sum/gradeTotal).toFixed(2);
+    return (sum/gradeTotal).toFixed(2);
   }
 
   $(".btn").on("click", function () {
