@@ -23,7 +23,7 @@ $(document).ready(function() {
       var $this = $(this);
       if(!isNaN($this.val()) && !isNaN($this.parent().find('.grade-select').val())) {
         sum += parseFloat($this.val() || 0) * parseFloat($this.parent().find('.grade-select').val() || 0);
-        gradeTotal += parseFloat($this.val() || 0)
+        gradeTotal += parseFloat($this.val() || 0);
       }
     });
     return  (sum/gradeTotal).toFixed(2);
@@ -34,4 +34,4 @@ $(document).ready(function() {
       $('html, body').animate({scrollTop:$(document).height()}, 'slow');
       return false;
   });
-})
+});
